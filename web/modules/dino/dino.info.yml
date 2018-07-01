@@ -1,0 +1,6 @@
+name: Dino
+description: Drupal 8 sandbox
+package: Custom
+
+type: module
+core: 8.x

@@ -1,0 +1,6 @@
+hello.content:
+  path: '/hello/{count}'
+  defaults:
+    _controller: '\Drupal\dino\Controller\DinoController::content'
+  requirements:
+    _permission: 'access content'
