@@ -1,0 +1,3 @@
+services:
+  dino.roar_generator:
+    class: Drupal\dino\Jurassic\RoarGenerator
