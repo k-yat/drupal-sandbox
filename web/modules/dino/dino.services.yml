@@ -5,5 +5,12 @@ services:
   dino.roar_generator:
     class: Drupal\dino\Jurassic\RoarGenerator
     arguments:
-      - '@keyvalue'
       - '%dino.roar.use_keyvalue_cache%'
+      - '@keyvalue'
+
+  dino.dino_listener:
+    class: Drupal\dino\Jurassic\DinoListener
+    arguments:
+      - '@logger.factory'
+    tags:
+      - { name: 'event_subscriber' }
