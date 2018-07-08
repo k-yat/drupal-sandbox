@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eddfd7be32abf8cdfb444df7b6f4ac6a",
+    "content-hash": "a0ad03f15c13e8a98bee7f2452d47441",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1927,6 +1927,92 @@
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
             "time": "2018-06-25T01:07:11+00:00"
+        },
+        {
+            "name": "drupal/realistic_dummy_content",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/realistic_dummy_content",
+                "reference": "cf7369f606be3204f3777a96accefa04fc4eb9cf"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/realistic_dummy_content_api": "*"
+            },
+            "require-dev": {
+                "drupal/devel": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1509815886",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alberto56",
+                    "homepage": "https://www.drupal.org/user/245583"
+                }
+            ],
+            "description": "Uses the Realistic Dummy Content API, and custom demo images in a specific directory structure, to make customized generated content. Do not enable on production sites.",
+            "homepage": "https://www.drupal.org/project/realistic_dummy_content",
+            "support": {
+                "source": "http://cgit.drupalcode.org/realistic_dummy_content"
+            },
+            "time": "2017-11-04T17:11:54+00:00"
+        },
+        {
+            "name": "drupal/realistic_dummy_content_api",
+            "version": "dev-2.x",
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/realistic_dummy_content": "self.version"
+            },
+            "require-dev": {
+                "drupal/devel": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1509815886",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alberto56",
+                    "homepage": "https://www.drupal.org/user/245583"
+                }
+            ],
+            "description": "Allows enabled modules to generate kick-ass demo content (see the Realistic Dummy Content module for an example of how to do this). Do not enable on production sites.",
+            "homepage": "https://www.drupal.org/project/realistic_dummy_content",
+            "support": {
+                "source": "http://cgit.drupalcode.org/realistic_dummy_content"
+            }
         },
         {
             "name": "drush/drush",
@@ -5761,6 +5847,61 @@
             "time": "2017-10-19T19:58:43+00:00"
         },
         {
+            "name": "pear/console_table",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Table.git",
+                "reference": "1930c11897ca61fd24b95f2f785e99e0f36dcdea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/1930c11897ca61fd24b95f2f785e99e0f36dcdea",
+                "reference": "1930c11897ca61fd24b95f2f785e99e0f36dcdea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2018-01-25T20:47:17+00:00"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "1.0.1",
             "source": {
@@ -7267,7 +7408,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/devel": 20
+        "drupal/devel": 20,
+        "drupal/realistic_dummy_content": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
